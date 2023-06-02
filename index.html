@@ -8,16 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-    <form id="form">
+    <form>
+        <header>
+            <h1 id="brand">
+                List
+            </h1>
+            <div class="container">
+                <div class="row">
+                    <div >
+                       <input name="input" id="content" type="text">
+                       <input type="text" id="input" placeholder="---ENTER---">
+               
+               +     </div>
+                    <div>
+                        <button id="sort">Sort</button>
+                        <button id="add">ADD</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+    </form>
+    <div class="row">
+        <ul id="todo-list">
+
+        </ul>
+    </div>    
+
+    <form name="forms" id="form">
         <div class="input">
-            <input id="content" type="text">
+            <input name="input" id="content" type="text">
         </div>
         <div class="btn">
-            <input type="button" value="Sorting">
-            <input type="button" value="Add">
+            <input type="button" value="Sorting" onclick="sorting()">
+            <input id="addlist" type="button" value="Add" onclick="added()">
         </div>
         <div class="output">
-            <input type="checkbox" name="" id="stuff">
+            <ul id="todolist"></ul>
         </div>
     </form>
     <script src="./script/code.js"></script>
