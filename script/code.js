@@ -15,10 +15,11 @@ function added() {
 
     document.querySelector(".output")
 }
+MY FIRST ATTEMPT
 }
 /*function sorting() {
     console.log(todo.sort());}*/
-    let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
+   /* let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
 
     function renderTodoList() {
         let todoListElement = document.getElementById('todo-list');
@@ -46,10 +47,10 @@ function added() {
             }
             listItem.appendChild(task);
 
-            todoListElement.appendChild(listItem);
         }
-    }
+    }*/
 
+    //THIS IS THE ONE I DID WITH THE HELP OF
 function saveTodoList() {
 localStorage.setItem('todoList', JSON.stringify(todoList));
 }
@@ -103,9 +104,8 @@ if (newItem !== '') {
         renderTodoList();
     }
 
-    // Event listeners for add and sort buttons
     document.getElementById('add').addEventListener('click', addItem);
     document.getElementById('sort').addEventListener('click', sortItems);
 
-    // Initial rendering of the to-do list
+
     renderTodoList();
